@@ -1,0 +1,6 @@
+@mixin section-paddings {
+  @include sm-down {
+    @include safe-area(padding-right, right, $section-padding);
+    @include safe-area(padding-left, left, $section-padding);
+  }
+}

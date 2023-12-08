@@ -1,0 +1,337 @@
+.footer {
+  &.wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include section-paddings;
+
+    @include md-down {
+      padding-top: 45px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .top-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $column-gap;
+    margin-bottom: 45px;
+
+    @include md-down {
+      display: block;
+    }
+  }
+
+  .other-links {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 5;
+    align-items: flex-start;
+
+    @include lg-down {
+      margin-bottom: 50px;
+    }
+
+    @include md-down {
+      margin-bottom: 45px;
+    }
+  }
+
+  .logo {
+    display: block;
+    width: 138px;
+    height: 30px;
+    margin-bottom: 45px;
+
+    @include md-down {
+      width: 110px;
+      height: 24px;
+      margin-bottom: 0;
+    }
+  }
+
+  .social-menu {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    @include lg-down {
+      grid-column: span 6;
+    }
+
+    @include sm-down {
+      margin-bottom: 25px;
+    }
+  }
+
+  .social-menu-item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .md-hidden {
+    @include md-down {
+      display: none;
+    }
+  }
+
+  .md-visible {
+    display: none;
+
+    @include md-down {
+      display: flex;
+    }
+  }
+
+  .social-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: $color-quaternary;
+    border-radius: 100px;
+    transition: background-color $transition-base;
+
+    @include md-down {
+      width: 30px;
+      height: 30px;
+    }
+
+    @include hover {
+      background-color: $color-secondary;
+    }
+
+    &_facebook {
+      svg {
+        width: 12px;
+
+        @include lg-down {
+          width: 10px;
+        }
+
+        @include md-down {
+          width: 9px;
+        }
+      }
+    }
+
+    &_github {
+      svg {
+        width: 24px;
+
+        @include lg-down {
+          width: 22px;
+        }
+
+        @include md-down {
+          width: 20px;
+        }
+      }
+    }
+
+    &_gitlab {
+      svg {
+        width: 22px;
+
+        @include lg-down {
+          width: 19px;
+        }
+
+        @include md-down {
+          width: 16px;
+        }
+      }
+    }
+
+    &_instagram {
+      svg {
+        width: 18px;
+
+        @include lg-down {
+          width: 16px;
+        }
+
+        @include md-down {
+          width: 14px;
+        }
+      }
+    }
+
+    &_linkedin {
+      svg {
+        width: 17px;
+        margin-bottom: 2px;
+
+        @include lg-down {
+          width: 15px;
+        }
+
+        @include md-down {
+          width: 13px;
+        }
+      }
+    }
+
+    &_twitter {
+      svg {
+        width: 20px;
+
+        @include lg-down {
+          width: 18px;
+        }
+
+        @include md-down {
+          width: 16px;
+        }
+      }
+    }
+
+    &_mastodon {
+      svg {
+        width: 20px;
+
+        @include lg-down {
+          width: 18px;
+        }
+
+        @include md-down {
+          width: 16px;
+        }
+      }
+    }
+
+    &_youtube {
+      svg {
+        width: 20px;
+
+        @include lg-down {
+          width: 17px;
+        }
+
+        @include md-down {
+          width: 15px;
+        }
+      }
+    }
+
+    svg {
+      fill: $color-tertiary;
+    }
+  }
+
+  .nav {
+    grid-column: span 7;
+
+    @include md-down {
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-top: 75px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    @include lg-down {
+      grid-template-rows: repeat(4, max-content);
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md-down {
+      grid-template-rows: repeat(3, max-content);
+      grid-template-columns: repeat(4, 1fr);
+      padding-top: 0;
+    }
+
+    @include sm-down {
+      grid-template-rows: repeat(6, max-content);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include xs-down {
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+    }
+  }
+
+  .menu-item {
+    font-weight: 700;
+
+    @include with-link-secondary;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu-link {
+    display: block;
+
+    @include md-down {
+      font-size: 16px;
+    }
+  }
+
+  .bottom-section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $column-gap;
+    color: $color-quaternary;
+
+    @include lg-down {
+      row-gap: 30px;
+      align-items: center;
+    }
+
+    @include md-down {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 10px;
+      column-gap: $column-gap-md;
+      font-size: 16px;
+    }
+
+    @include sm-down {
+      grid-template-rows: repeat(2, min-content);
+    }
+  }
+
+  .copyright {
+    grid-column: span 5;
+    margin: 0;
+    font-style: normal;
+
+    @include lg-down {
+      grid-column: span 7;
+    }
+  }
+
+  .praise {
+    grid-column: span 5;
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $color-quaternary;
+
+    @include with-link-secondary;
+
+    @include lg-down {
+      grid-column: span 5;
+    }
+  }
+
+}

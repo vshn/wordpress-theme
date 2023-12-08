@@ -1,0 +1,112 @@
+.categories {
+
+    &.wrapper {
+        margin-bottom: 90px;
+
+        @include section-paddings;
+
+        @include lg-down {
+            margin-bottom: 60px;
+        }
+
+        @include md-down {
+            margin-bottom: 45px;
+        }
+    }
+
+    .inner {
+        &::after {
+            position: absolute;
+            top: 0;
+            right: calc(#{$container-side-gap} / -1);
+            z-index: 1;
+            display: block;
+            width: $container-side-gap-md;
+            height: 100%;
+            pointer-events: none;
+            content: '';
+            background: linear-gradient(270deg, $color-tertiary 0%, rgba($color-tertiary, 0) 100%);
+
+            @include lg-down {
+                right: calc(#{$container-side-gap-lg} / -1);
+            }
+
+            @include md-down {
+                right: calc(#{$container-side-gap-md} / -1);
+            }
+
+            @include sm-down {
+                right: calc(#{$section-padding} / -1);
+                width: $section-padding;
+            }
+        }
+    }
+
+    .items-wrapper {
+        position: relative;
+        display: flex;
+        overflow-x: auto;
+
+        @include lg-down {
+            justify-content: space-between;
+        }
+
+        @include md-down {
+            margin-right: calc(#{$container-side-gap-md} / -1);
+        }
+
+        @include sm-down {
+            margin-right: calc(#{$section-padding} / -1);
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+            background: transparent;
+        }
+    }
+
+    .item {
+        padding: 5px 8px;
+        margin-right: 15px;
+        font-size: $font-size-sm;
+        font-weight: 700;
+        line-height: $line-height-sm;
+        color: $color-primary;
+        text-decoration: none;
+        white-space: nowrap;
+        background-color: $color-additional-1;
+        border: 2px solid $color-additional-1;
+        border-radius: 5px;
+        transition: color $transition-base;
+
+        @include hover {
+            color: $color-secondary;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            @include md-down {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    right: calc(#{$container-side-gap-md} / -1);
+                    display: block;
+                    width: $container-side-gap-md;
+                    height: 1px;
+                    content: '';
+                }
+            }
+        }
+
+        &.active {
+            position: relative;
+            color: $color-accent-primary;
+            pointer-events: none;
+            background-color: $color-tertiary;
+            border: 2px solid $color-accent-primary;
+        }
+    }
+}

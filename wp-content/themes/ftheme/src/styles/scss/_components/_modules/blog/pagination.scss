@@ -1,0 +1,141 @@
+.pagination {
+    &.wrapper {
+        margin-bottom: 180px;
+
+        @include section-paddings;
+
+        @include lg-down {
+            margin-bottom: 150px;
+        }
+
+        @include md-down {
+            margin-bottom: 120px;
+        }
+    }
+
+    .items-wrapper {
+        display: flex;
+        max-width: 850px;
+        padding: 0;
+        list-style-type: none;
+
+        @include lg-down {
+            max-width: 610px;
+        }
+
+        @include md-down {
+            max-width: 580px;
+        }
+    }
+
+    .item {
+        display: none;
+
+        &.previous {
+            display: none;
+            font-weight: 700;
+            color: $color-primary;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color $transition-base;
+
+            span {
+                color: #000d1a;
+                cursor: pointer;
+                font-weight: 700;
+            }
+
+            a:focus,
+            a:active {
+                outline: none;
+            }
+
+            &:not(.disabled) {
+
+                a:focus,
+                a:active {
+                    color: $color-accent-primary;
+
+                    path {
+                        stroke: $color-accent-primary;
+                    }
+                }
+            }
+        }
+        
+        &.next {
+            display: list-item;
+            font-weight: 700;
+            color: $color-primary;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color $transition-base;
+
+            span {
+                color: #000d1a;
+                cursor: pointer;
+                font-weight: 700;
+            }
+
+            a:focus,
+            a:active {
+                outline: none;
+            }
+
+            &:not(.disabled) {
+
+                a:focus,
+                a:active {
+                    color: $color-accent-primary;
+
+                    path {
+                        stroke: $color-accent-primary;
+                    }
+                }
+            }
+        }
+
+        &.disabled {
+            visibility: hidden;
+        }
+
+        @include hover {
+            &:not(.disabled) {
+                color: $color-accent-primary;
+
+                span {
+                    color: $color-accent-primary !important;
+                }
+
+                path {
+                    stroke: $color-accent-primary;
+                }
+            }
+        }
+
+        path {
+            transition: stroke $transition-base;
+        }
+
+        &.previous {
+            margin-right: auto;
+
+            svg {
+                transform: rotate(180deg);
+            }
+
+            span {
+                padding-left: 12px;
+            }
+        }
+
+        &.next {
+            margin-left: auto;
+
+            span {
+                padding-right: 12px;
+            }
+        }
+    }
+
+}

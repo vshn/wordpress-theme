@@ -1,0 +1,132 @@
+.contact-section {
+    &.wrapper {
+        padding-bottom: 180px;
+        border-bottom: 2px solid $color-additional-1;
+
+        @include section-paddings;
+
+        @include lg-down {
+            padding-bottom: 150px;
+        }
+
+        @include md-down {
+            padding-bottom: 120px;
+        }
+    }
+
+    .form-wrapper {
+        position: relative;
+        z-index: 1;
+        min-height: 290px;
+        margin-top: -290px;
+        margin-bottom: 120px;
+
+        #form-container {
+            background-color: $color-tertiary;
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba($color-primary, 0.25);
+        }
+    }
+
+    .item {
+        &.wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            column-gap: 140px;
+            justify-content: center;
+
+            @include lg-down {
+                column-gap: 100px;
+            }
+
+            @include md-down {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 30px;
+            }
+        }
+
+        .wrapper {
+            text-align: center;
+
+            @include with-link-primary;
+        }
+
+        .icon-wrapper {
+            position: relative;
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin-top: 0;
+            margin-right: auto;
+            margin-bottom: 20px;
+            margin-left: auto;
+            background-color: $color-accent-secondary;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba($color-primary, 0.15);
+
+            img {
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .description {
+            color: $color-secondary;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        .link {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.6;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+
+    }
+}
+
+.contact-hero {
+    &.wrapper {
+        position: relative;
+        margin-top: $header-height;
+        background-color: $color-additional-1;
+
+        @include section-paddings;
+
+        @include md-down {
+            margin-top: $header-height-md;
+        }
+    }
+
+    .inner {
+        min-height: 500px;
+        text-align: center;
+    }
+
+    .title {
+        padding-top: 90px;
+        color: #000d1a;
+    }
+
+    .background-image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+}

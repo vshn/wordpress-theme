@@ -1,0 +1,136 @@
+.cards-wrapper {
+  .wrapper {
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(
+                    234.34deg,
+                    #f8fafc 0%,
+                    $color-tertiary 100%
+    );
+    border-radius: 8px;
+    box-shadow: 0 10px 20px 10px rgba($color-primary, 0.05);
+    transition: background-image $transition-base, box-shadow $transition-base;
+
+    @include hover {
+      z-index: 1;
+      background-image: linear-gradient(0deg, $color-tertiary, $color-tertiary),
+      linear-gradient(234.34deg, #f8fafc 0%, $color-tertiary 100%);
+      box-shadow: 0 30px 60px 10px rgba($color-primary, 0.25);
+
+      .learn-more {
+        color: $color-accent-primary;
+      }
+    }
+  }
+
+  .inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 74px;
+    font-weight: bold;
+    line-height: $line-height-lg;
+    background-color: $color-accent-secondary;
+    border-radius: 5px;
+    border-bottom-right-radius: 30px;
+    z-index: 1;
+  }
+
+  .day {
+    font-size: $font-size-lg;
+    font-weight: 900;
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    justify-content: center;
+
+    img {
+      height: 135px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+  }
+
+  .title {
+    align-self: flex-start;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .description {
+    margin-bottom: 70px;
+  }
+
+  .learn-more {
+    width: 100%;
+    padding-top: 15px;
+    margin-top: auto;
+    font-size: $font-size-xs;
+    font-weight: 700;
+    line-height: $line-height-xs;
+    text-transform: uppercase;
+    border-top: 2px solid $color-additional-1;
+    transition: color $transition-base;
+  }
+
+  .gatsby-image {
+
+
+    &.wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: top;
+      height: 410px;
+      opacity: 1; // TO DO LAZY LOAD OF IMAGES
+      transform: translateZ(0);
+      transition: opacity .25s linear;
+      will-change: opacity;
+    }
+
+    img {
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      margin: 0;
+      max-width: none;
+      padding: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+}

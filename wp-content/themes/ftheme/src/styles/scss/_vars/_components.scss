@@ -1,0 +1,67 @@
+// File for random components variables used across sass
+$caret-width: 4px;
+
+// Colors
+$color-primary: #000d1a;
+$color-secondary: #818898;
+$color-tertiary: #fff;
+$color-quaternary: #b9bfc6;
+
+$color-accent-primary: #4cc3ff;
+$color-accent-secondary: #ffbf00;
+$color-accent-tertiary: #dc0044;
+
+$color-additional-1: #f6f7f9;
+$color-additional-2: #e9ebf2;
+
+// Fonts
+$font-family-primary: 'Montserrat', sans-serif;
+
+$font-size-xxl: 70px;
+$line-height-xxl: 1.2;
+
+$font-size-xl: 50px;
+$line-height-xl: 1.2;
+
+$font-size-lg: 26px;
+$line-height-lg: 1.2;
+
+$font-size-md: 20px;
+$line-height-md: 1.4;
+
+$font-size-sm: 16px;
+$line-height-sm: 1.4;
+
+$font-size-xs: 14px;
+$line-height-xs: 1.4;
+
+$font-size-base: $font-size-sm;
+$line-height-base: $line-height-sm;
+
+// Container
+$container-width: 1290px;
+$container-side-gap: calc((100vw - #{$container-width}) / 2);
+
+$container-width-lg: 930px;
+$container-side-gap-lg: calc((100vw - #{$container-width-lg}) / 2);
+
+$container-width-md: 700px;
+$container-side-gap-md: calc((100vw - #{$container-width-md}) / 2);
+
+// Additional
+$header-height: 160px;
+$header-height-md: 74px;
+
+$column-gap: 30px;
+$column-gap-md: 20px;
+
+$section-padding: 15px;
+
+$transition-base: 0.2s;
+
+// Breakpoints
+// We minus 0.02px from our breakpoints because these breakpoints are for mobile-first but we use desktop-first approach
+$breakpoint-lg-down: 1330px - 0.02px;
+$breakpoint-md-down: 1024px - 0.02px;
+$breakpoint-sm-down: 768px - 0.02px;
+$breakpoint-xs-down: 414px - 0.02px;

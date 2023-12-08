@@ -1,0 +1,64 @@
+// placeholder module file
+@import 'header';
+@import 'mobile-menu';
+@import 'footer';
+@import 'sub_menu';
+@import 'sub_sub_menu';
+@import 'hero';
+@import 'button';
+@import 'advantages';
+@import 'item';
+@import 'solutions-product';
+@import 'blog-posts-carousel';
+@import 'blog-post-carousel-item';
+@import 'news';
+@import 'upcoming-events';
+@import 'past-events';
+@import 'card';
+@import 'technology';
+@import 'partners';
+@import 'jobs';
+@import 'report';
+@import 'footer';
+@import 'awards';
+@import 'awards-item';
+@import 'contact';
+@import 'rating-cards';
+@import 'form';
+@import 'clients';
+@import 'success-stories-list';
+@import 'technology-partners-list';
+@import '404';
+@import 'partner-info';
+@import 'success-story-card';
+@import 'personal-card';
+
+@import 'products/hero';
+@import 'products/related-items';
+@import 'products/sub-pages';
+
+@import "single-products/hero";
+@import "single-products/content";
+
+@import "login/login";
+
+@import "contact/contact.scss";
+@import "contact/form.scss";
+
+@import 'blog/featured-post.scss';
+@import 'blog/categories.scss';
+@import 'blog/blog-post-list.scss';
+@import 'blog/pagination.scss';
+@import 'blog/single-blog-post.scss';
+
+@import 'headings';
+
+@import 'jobs/jobs';
+@import 'jobs/jobs-content';
+@import 'jobs/jobs-panel';
+
+@import 'breadcrumbs';
+
+@import 'team-members';
+@import 'selects';
+@import 'overlay';

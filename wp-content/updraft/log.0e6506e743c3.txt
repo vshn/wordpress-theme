@@ -1,0 +1,324 @@
+0000.000 (0) Opened log file at time: Fri, 29 Sep 2023 06:28:50 +0000 on http://vshn-old.local
+0000.011 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.12 WP: 6.3.1 PHP: 8.1.23 (fpm-fcgi, Linux stefan 6.2.0-33-generic #33~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep  7 10:33:52 UTC 2 x86_64) MySQL: 8.0.16 (max packet size=16777216) WPLANG: de_DE Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 14.4M | 16M) multisite: N openssl: OpenSSL 1.1.1f  31 Mar 2020 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.019 (0) Free space on disk containing Updraft's temporary directory: 5400.3 MB
+0000.027 (0) Tasks: Backup files:  (schedule: weekly) Backup DB: 1 (schedule: daily)
+0000.040 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.061 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1693977605, seconds_ago=1991325)
+0000.097 (0) Set semaphore last lock (d) time to 2023-09-29 06:28:50
+0000.111 (0) Semaphore lock (d) complete
+0000.140 (0) Backup run: resumption=0, nonce=0e6506e743c3, file_nonce=0e6506e743c3 begun at=1695968930 (0s ago), job type=backup
+0000.160 (0) Scheduling a resumption (1) after 300 seconds (1695969230) in case this run gets aborted
+0000.206 (0) This backup run is not intended for files - skipping
+0000.214 (0) Beginning creation of database dump (WordPress DB)
+0000.222 (0) SQL compatibility mode is: NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.297 (0) Table wp_options: Total expected rows (via COUNT): 619
+0000.338 (0) Table wp_options: Rows added in this batch (next record: 170922): 615 (uncompressed bytes in this segment=378581) in 0.05 seconds
+0000.389 (0) Table wp_options: finishing file(s) (2, 120.5 KB)
+0000.417 (0) Table wp_users: Total expected rows (via COUNT): 56
+0000.425 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.450 (0) Table wp_users: Rows added in this batch (next record: 59): 56 (uncompressed bytes in this segment=10632) in 0.04 seconds
+0000.522 (0) Table wp_users: finishing file(s) (2, 4.1 KB)
+0000.560 (0) Table wp_usermeta: Total expected rows (approximate): 2156
+0000.590 (0) Table wp_usermeta: Rows added in this batch (next record: 6889): 2156 (uncompressed bytes in this segment=204366) in 0.05 seconds
+0000.629 (0) Table wp_usermeta: finishing file(s) (2, 29.2 KB)
+0000.662 (0) Table wp_commentmeta: Total expected rows (via COUNT): 0
+0000.673 (0) Table wp_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=729) in 0.03 seconds
+0000.710 (0) Table wp_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.735 (0) Table wp_comments: Total expected rows (via COUNT): 51
+0000.748 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.772 (0) Table wp_comments: Rows added in this batch (next record: 103): 51 (uncompressed bytes in this segment=18746) in 0.04 seconds
+0000.802 (0) Table wp_comments: finishing file(s) (2, 4.4 KB)
+0000.825 (0) Table wp_links: Total expected rows (via COUNT): 0
+0000.846 (0) Table wp_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1508) in 0.02 seconds
+0000.874 (0) Table wp_links: finishing file(s) (2, 0.5 KB)
+0001.055 (0) Table wp_postmeta: Total expected rows (approximate): 154820
+0001.076 (0) [Warning] Die Tabelle wp_postmeta hat sehr viele Zeilen (154820) – wir hoffen, dass dein Webhoster dir genügend Ressourcen zur Verfügung stellt, um diese Tabelle in die Sicherung einzuschließen. Falls nicht, musst du entweder Daten aus dieser Tabelle löschen, oder deinen Hosting-Anbieter bitten, dir mehr Ressourcen zur Verfügung zu stellen.
+0002.155 (0) Table wp_postmeta: Rows added in this batch (next record: 361031): 165454 (uncompressed bytes in this segment=13524534) in 1.26 seconds
+0002.300 (0) Table wp_postmeta: finishing file(s) (2, 1700.9 KB)
+0003.020 (0) Table wp_posts: Total expected rows (approximate): 9476
+0005.690 (0) Table wp_posts: Rows added in this batch (next record: 47055): 11845 (uncompressed bytes in this segment=55640499) in 3.37 seconds
+0005.747 (0) Table wp_posts: finishing file(s) (2, 6457.6 KB)
+0005.773 (0) Table wp_term_relationships: Total expected rows (approximate): 10885
+0005.874 (0) Table wp_term_relationships: Rows added in this batch (next record: 100000): 10877 (uncompressed bytes in this segment=196130) in 0.10 seconds
+0005.915 (0) Table wp_term_relationships: finishing file(s) (2, 34.6 KB)
+0005.973 (0) Table wp_term_taxonomy: Total expected rows (approximate): 14825
+0006.145 (0) Table wp_term_taxonomy: Rows added in this batch (next record: 15076): 14705 (uncompressed bytes in this segment=889085) in 0.21 seconds
+0006.204 (0) Table wp_term_taxonomy: finishing file(s) (2, 99.4 KB)
+0006.250 (0) Table wp_termmeta: Total expected rows (via COUNT): 0
+0006.289 (0) Table wp_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=702) in 0.06 seconds
+0006.339 (0) Table wp_termmeta: finishing file(s) (2, 0.4 KB)
+0006.365 (0) Table wp_terms: Total expected rows (approximate): 14486
+0006.568 (0) Table wp_terms: Rows added in this batch (next record: 15076): 14705 (uncompressed bytes in this segment=618891) in 0.20 seconds
+0006.599 (0) Table wp_terms: finishing file(s) (2, 140.3 KB)
+0006.627 (0) Table wp_ahrefs_seo_backlinks: Total expected rows (via COUNT): 0
+0006.637 (0) Table wp_ahrefs_seo_backlinks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1729) in 0.01 seconds
+0006.668 (0) Table wp_ahrefs_seo_backlinks: finishing file(s) (2, 0.6 KB)
+0006.695 (0) Table wp_ahrefs_seo_blacklist: Total expected rows (via COUNT): 0
+0006.703 (0) Table wp_ahrefs_seo_blacklist: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=633) in 0.01 seconds
+0006.739 (0) Table wp_ahrefs_seo_blacklist: finishing file(s) (2, 0.4 KB)
+0006.766 (0) Table wp_ahrefs_seo_content: Total expected rows (via COUNT): 0
+0006.776 (0) Table wp_ahrefs_seo_content: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1733) in 0.01 seconds
+0006.822 (0) Table wp_ahrefs_seo_content: finishing file(s) (2, 0.6 KB)
+0006.856 (0) Table wp_ahrefs_seo_keywords: Total expected rows (approximate): 0
+0006.882 (0) Table wp_ahrefs_seo_keywords: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=610) in 0.03 seconds
+0006.927 (0) Table wp_ahrefs_seo_keywords: finishing file(s) (2, 0.4 KB)
+0006.956 (0) Table wp_blc_filters: Total expected rows (via COUNT): 0
+0006.967 (0) Table wp_blc_filters: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=581) in 0.01 seconds
+0007.004 (0) Table wp_blc_filters: finishing file(s) (2, 0.3 KB)
+0007.037 (0) Table wp_blc_instances: Total expected rows (approximate): 16528
+0007.492 (0) Table wp_blc_instances: Rows added in this batch (next record: 76899): 17241 (uncompressed bytes in this segment=2529351) in 0.46 seconds
+0007.569 (0) Table wp_blc_instances: finishing file(s) (2, 361.9 KB)
+0007.589 (0) Table wp_blc_links: Total expected rows (approximate): 3520
+0008.020 (0) Table wp_blc_links: Rows added in this batch (next record: 8959): 5084 (uncompressed bytes in this segment=13271955) in 0.43 seconds
+0008.052 (0) Table wp_blc_links: finishing file(s) (2, 1910.1 KB)
+0008.077 (0) Table wp_blc_synch: Total expected rows (approximate): 1380
+0008.108 (0) Table wp_blc_synch: Rows added in this batch (next record: 2000): 1380 (uncompressed bytes in this segment=61046) in 0.03 seconds
+0008.138 (0) Table wp_blc_synch: finishing file(s) (2, 8.1 KB)
+0008.164 (0) Table wp_icl_content_status: Total expected rows (via COUNT): 0
+0008.177 (0) Table wp_icl_content_status: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=606) in 0.02 seconds
+0008.211 (0) Table wp_icl_content_status: finishing file(s) (2, 0.3 KB)
+0008.232 (0) Table wp_icl_core_status: Total expected rows (via COUNT): 0
+0008.244 (0) Table wp_icl_core_status: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=895) in 0.01 seconds
+0008.271 (0) Table wp_icl_core_status: finishing file(s) (2, 0.4 KB)
+0008.290 (0) Table wp_icl_flags: Total expected rows (via COUNT): 65
+0008.303 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.323 (0) Table wp_icl_flags: Rows added in this batch (next record: 65): 65 (uncompressed bytes in this segment=2416) in 0.04 seconds
+0008.353 (0) Table wp_icl_flags: finishing file(s) (2, 0.9 KB)
+0008.380 (0) Table wp_icl_languages: Total expected rows (via COUNT): 65
+0008.387 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0008.398 (0) Table wp_icl_languages: Rows added in this batch (next record: 65): 65 (uncompressed bytes in this segment=4188) in 0.02 seconds
+0008.430 (0) Table wp_icl_languages: finishing file(s) (2, 1.6 KB)
+0008.451 (0) Table wp_icl_languages_translations: Total expected rows (approximate): 4225
+0008.529 (0) Table wp_icl_languages_translations: Rows added in this batch (next record: 4225): 4225 (uncompressed bytes in this segment=148009) in 0.08 seconds
+0008.560 (0) Table wp_icl_languages_translations: finishing file(s) (2, 34.7 KB)
+0008.578 (0) Table wp_icl_locale_map: Total expected rows (approximate): 0
+0008.591 (0) Table wp_icl_locale_map: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=566) in 0.01 seconds
+0008.621 (0) Table wp_icl_locale_map: finishing file(s) (2, 0.3 KB)
+0008.642 (0) Table wp_icl_message_status: Total expected rows (via COUNT): 0
+0008.651 (0) Table wp_icl_message_status: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1056) in 0.01 seconds
+0008.680 (0) Table wp_icl_message_status: finishing file(s) (2, 0.5 KB)
+0008.709 (0) Table wp_icl_node: Total expected rows (via COUNT): 0
+0008.719 (0) Table wp_icl_node: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=512) in 0.01 seconds
+0008.750 (0) Table wp_icl_node: finishing file(s) (2, 0.3 KB)
+0008.776 (0) Table wp_icl_reminders: Total expected rows (via COUNT): 0
+0008.785 (0) Table wp_icl_reminders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=630) in 0.01 seconds
+0008.817 (0) Table wp_icl_reminders: finishing file(s) (2, 0.3 KB)
+0008.842 (0) Table wp_icl_string_batches: Total expected rows (via COUNT): 0
+0008.850 (0) Table wp_icl_string_batches: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=549) in 0.01 seconds
+0008.884 (0) Table wp_icl_string_batches: finishing file(s) (2, 0.3 KB)
+0008.909 (0) Table wp_icl_string_positions: Total expected rows (via COUNT): 0
+0008.918 (0) Table wp_icl_string_positions: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=673) in 0.01 seconds
+0008.951 (0) Table wp_icl_string_positions: finishing file(s) (2, 0.4 KB)
+0008.973 (0) Table wp_icl_string_status: Total expected rows (via COUNT): 0
+0008.984 (0) Table wp_icl_string_status: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=732) in 0.01 seconds
+0009.018 (0) Table wp_icl_string_status: finishing file(s) (2, 0.4 KB)
+0009.048 (0) Table wp_icl_string_translations: Total expected rows (via COUNT): 0
+0009.062 (0) Table wp_icl_string_translations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1135) in 0.03 seconds
+0009.123 (0) Table wp_icl_string_translations: finishing file(s) (2, 0.5 KB)
+0009.156 (0) Table wp_icl_strings: Total expected rows (via COUNT): 0
+0009.169 (0) Table wp_icl_strings: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1763) in 0.03 seconds
+0009.208 (0) Table wp_icl_strings: finishing file(s) (2, 0.6 KB)
+0009.242 (0) Table wp_icl_translate: Total expected rows (via COUNT): 0
+0009.253 (0) Table wp_icl_translate: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1162) in 0.02 seconds
+0009.293 (0) Table wp_icl_translate: finishing file(s) (2, 0.5 KB)
+0009.315 (0) Table wp_icl_translate_job: Total expected rows (via COUNT): 0
+0009.325 (0) Table wp_icl_translate_job: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1092) in 0.01 seconds
+0009.356 (0) Table wp_icl_translate_job: finishing file(s) (2, 0.5 KB)
+0009.386 (0) Table wp_icl_translation_batches: Total expected rows (via COUNT): 0
+0009.400 (0) Table wp_icl_translation_batches: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=704) in 0.01 seconds
+0009.431 (0) Table wp_icl_translation_batches: finishing file(s) (2, 0.4 KB)
+0009.453 (0) Table wp_icl_translation_downloads: Total expected rows (via COUNT): 0
+0009.470 (0) Table wp_icl_translation_downloads: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=655) in 0.02 seconds
+0009.530 (0) Table wp_icl_translation_downloads: finishing file(s) (2, 0.4 KB)
+0009.565 (0) Table wp_icl_translation_status: Total expected rows (via COUNT): 0
+0009.573 (0) Table wp_icl_translation_status: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1425) in 0.03 seconds
+0009.611 (0) Table wp_icl_translation_status: finishing file(s) (2, 0.5 KB)
+0009.641 (0) Table wp_icl_translations: Total expected rows (via COUNT): 0
+0009.650 (0) Table wp_icl_translations: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1045) in 0.01 seconds
+0009.684 (0) Table wp_icl_translations: finishing file(s) (2, 0.4 KB)
+0009.709 (0) Table wp_mclean_refs: Total expected rows (via COUNT): 0
+0009.720 (0) Table wp_mclean_refs: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=611) in 0.01 seconds
+0009.752 (0) Table wp_mclean_refs: finishing file(s) (2, 0.4 KB)
+0009.782 (0) Table wp_mclean_scan: Total expected rows (via COUNT): 0
+0009.791 (0) Table wp_mclean_scan: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=855) in 0.02 seconds
+0009.824 (0) Table wp_mclean_scan: finishing file(s) (2, 0.4 KB)
+0009.848 (0) Table wp_wpfm_backup: Total expected rows (via COUNT): 2
+0009.858 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0009.878 (0) Table wp_wpfm_backup: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=739) in 0.03 seconds
+0009.910 (0) Table wp_wpfm_backup: finishing file(s) (2, 0.4 KB)
+0009.946 (0) Table wp_wpwhpro_authentication: Total expected rows (via COUNT): 0
+0009.966 (0) Table wp_wpwhpro_authentication: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=781) in 0.03 seconds
+0010.007 (0) Table wp_wpwhpro_authentication: finishing file(s) (2, 0.4 KB)
+0010.087 (0) Table wp_yoast_indexable: Total expected rows (approximate): 24833
+0010.928 (0) Table wp_yoast_indexable: Rows added in this batch (next record: 36152): 24908 (uncompressed bytes in this segment=9237821) in 0.90 seconds
+0010.970 (0) Table wp_yoast_indexable: finishing file(s) (2, 720.9 KB)
+0010.990 (0) Table wp_yoast_indexable_hierarchy: Total expected rows (approximate): 1686
+0011.016 (0) Table wp_yoast_indexable_hierarchy: Rows added in this batch (next record: 2000): 1686 (uncompressed bytes in this segment=38577) in 0.03 seconds
+0011.048 (0) Table wp_yoast_indexable_hierarchy: finishing file(s) (2, 7 KB)
+0011.070 (0) Table wp_yoast_migrations: Total expected rows (via COUNT): 18
+0011.083 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0011.098 (0) Table wp_yoast_migrations: Rows added in this batch (next record: 18): 18 (uncompressed bytes in this segment=1098) in 0.03 seconds
+0011.129 (0) Table wp_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0011.157 (0) Table wp_yoast_primary_term: Total expected rows (approximate): 1287
+0011.196 (0) Table wp_yoast_primary_term: Rows added in this batch (next record: 2180): 1287 (uncompressed bytes in this segment=106816) in 0.04 seconds
+0011.226 (0) Table wp_yoast_primary_term: finishing file(s) (2, 19 KB)
+0011.248 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 18686
+0011.473 (0) Table wp_yoast_seo_links: Rows added in this batch (next record: 369845): 18407 (uncompressed bytes in this segment=2597222) in 0.23 seconds
+0011.505 (0) Table wp_yoast_seo_links: finishing file(s) (2, 278.5 KB)
+0011.516 (0) PHP event: code E_WARNING: filemtime(): stat failed for /home/stefan/Local Sites/vshn-old/app/public/wp-content/updraft/backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz (line 1884, wp-content/plugins/updraftplus/backup.php)
+0011.529 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_options.table.tmpr170923.gz (1/49/fopen): adding to final database dump
+0011.538 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_options.table.gz (2/49/fopen): adding to final database dump
+0011.547 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_users.table.tmpr60.gz (3/49/fopen): adding to final database dump
+0011.558 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_users.table.gz (4/49/fopen): adding to final database dump
+0011.568 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_usermeta.table.tmpr6890.gz (5/49/fopen): adding to final database dump
+0011.575 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_usermeta.table.gz (6/49/fopen): adding to final database dump
+0011.588 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_commentmeta.table.tmpr0.gz (7/49/fopen): adding to final database dump
+0011.599 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_commentmeta.table.gz (8/49/fopen): adding to final database dump
+0011.606 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_comments.table.tmpr104.gz (9/49/fopen): adding to final database dump
+0011.614 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_comments.table.gz (10/49/fopen): adding to final database dump
+0011.627 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_links.table.tmpr0.gz (11/49/fopen): adding to final database dump
+0011.636 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_links.table.gz (12/49/fopen): adding to final database dump
+0011.643 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_postmeta.table.tmpr361032.gz (13/49/fopen): adding to final database dump
+0011.671 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_postmeta.table.gz (14/49/fopen): adding to final database dump
+0011.681 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_posts.table.tmpr47056.gz (15/49/fopen): adding to final database dump
+0011.752 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_posts.table.gz (16/49/fopen): adding to final database dump
+0011.764 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_term_relationships.table.tmpr100001.gz (17/49/fopen): adding to final database dump
+0011.779 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_term_relationships.table.gz (18/49/fopen): adding to final database dump
+0011.786 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_term_taxonomy.table.tmpr15077.gz (19/49/fopen): adding to final database dump
+0011.794 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_term_taxonomy.table.gz (20/49/fopen): adding to final database dump
+0011.807 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_termmeta.table.tmpr0.gz (21/49/fopen): adding to final database dump
+0011.817 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_termmeta.table.gz (22/49/fopen): adding to final database dump
+0011.825 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_terms.table.tmpr15077.gz (23/49/fopen): adding to final database dump
+0011.837 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_terms.table.gz (24/49/fopen): adding to final database dump
+0011.849 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_backlinks.table.tmpr0.gz (25/49/fopen): adding to final database dump
+0011.857 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_backlinks.table.gz (26/49/fopen): adding to final database dump
+0011.867 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_blacklist.table.tmpr0.gz (27/49/fopen): adding to final database dump
+0011.880 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_blacklist.table.gz (28/49/fopen): adding to final database dump
+0011.889 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_content.table.tmpr0.gz (29/49/fopen): adding to final database dump
+0011.896 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_content.table.gz (30/49/fopen): adding to final database dump
+0011.906 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_keywords.table.tmpr1.gz (31/49/fopen): adding to final database dump
+0011.919 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_ahrefs_seo_keywords.table.gz (32/49/fopen): adding to final database dump
+0011.926 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_filters.table.tmpr0.gz (33/49/fopen): adding to final database dump
+0011.933 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_filters.table.gz (34/49/fopen): adding to final database dump
+0011.944 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_instances.table.tmpr76900.gz (35/49/fopen): adding to final database dump
+0011.959 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_instances.table.gz (36/49/fopen): adding to final database dump
+0011.968 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_links.table.tmpr8960.gz (37/49/fopen): adding to final database dump
+0011.996 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_links.table.gz (38/49/fopen): adding to final database dump
+0012.006 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_synch.table.tmpr2001.gz (39/49/fopen): adding to final database dump
+0012.014 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_blc_synch.table.gz (40/49/fopen): adding to final database dump
+0012.023 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_content_status.table.tmpr0.gz (41/49/fopen): adding to final database dump
+0012.033 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_content_status.table.gz (42/49/fopen): adding to final database dump
+0012.042 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_core_status.table.tmpr0.gz (43/49/fopen): adding to final database dump
+0012.049 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_core_status.table.gz (44/49/fopen): adding to final database dump
+0012.059 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_flags.table.tmpr66.gz (45/49/fopen): adding to final database dump
+0012.069 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_flags.table.gz (46/49/fopen): adding to final database dump
+0012.079 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_languages.table.tmpr66.gz (47/49/fopen): adding to final database dump
+0012.087 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_languages.table.gz (48/49/fopen): adding to final database dump
+0012.100 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_languages_translations.table.tmpr4226.gz (49/49/fopen): adding to final database dump
+0012.111 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_languages_translations.table.gz (50/49/fopen): adding to final database dump
+0012.118 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_locale_map.table.tmpr1.gz (51/49/fopen): adding to final database dump
+0012.130 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_locale_map.table.gz (52/49/fopen): adding to final database dump
+0012.142 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_message_status.table.tmpr0.gz (53/49/fopen): adding to final database dump
+0012.150 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_message_status.table.gz (54/49/fopen): adding to final database dump
+0012.160 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_node.table.tmpr0.gz (55/49/fopen): adding to final database dump
+0012.175 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_node.table.gz (56/49/fopen): adding to final database dump
+0012.182 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_reminders.table.tmpr0.gz (57/49/fopen): adding to final database dump
+0012.190 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_reminders.table.gz (58/49/fopen): adding to final database dump
+0012.203 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_batches.table.tmpr0.gz (59/49/fopen): adding to final database dump
+0012.213 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_batches.table.gz (60/49/fopen): adding to final database dump
+0012.223 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_positions.table.tmpr0.gz (61/49/fopen): adding to final database dump
+0012.233 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_positions.table.gz (62/49/fopen): adding to final database dump
+0012.245 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_status.table.tmpr0.gz (63/49/fopen): adding to final database dump
+0012.252 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_status.table.gz (64/49/fopen): adding to final database dump
+0012.261 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_translations.table.tmpr0.gz (65/49/fopen): adding to final database dump
+0012.271 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_string_translations.table.gz (66/49/fopen): adding to final database dump
+0012.280 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_strings.table.tmpr0.gz (67/49/fopen): adding to final database dump
+0012.287 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_strings.table.gz (68/49/fopen): adding to final database dump
+0012.297 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translate.table.tmpr0.gz (69/49/fopen): adding to final database dump
+0012.310 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translate.table.gz (70/49/fopen): adding to final database dump
+0012.318 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translate_job.table.tmpr0.gz (71/49/fopen): adding to final database dump
+0012.326 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translate_job.table.gz (72/49/fopen): adding to final database dump
+0012.338 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_batches.table.tmpr0.gz (73/49/fopen): adding to final database dump
+0012.348 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_batches.table.gz (74/49/fopen): adding to final database dump
+0012.357 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_downloads.table.tmpr0.gz (75/49/fopen): adding to final database dump
+0012.371 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_downloads.table.gz (76/49/fopen): adding to final database dump
+0012.381 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_status.table.tmpr0.gz (77/49/fopen): adding to final database dump
+0012.389 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translation_status.table.gz (78/49/fopen): adding to final database dump
+0012.402 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translations.table.tmpr0.gz (79/49/fopen): adding to final database dump
+0012.413 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_icl_translations.table.gz (80/49/fopen): adding to final database dump
+0012.420 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_mclean_refs.table.tmpr0.gz (81/49/fopen): adding to final database dump
+0012.427 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_mclean_refs.table.gz (82/49/fopen): adding to final database dump
+0012.437 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_mclean_scan.table.tmpr0.gz (83/49/fopen): adding to final database dump
+0012.448 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_mclean_scan.table.gz (84/49/fopen): adding to final database dump
+0012.455 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_wpfm_backup.table.tmpr3.gz (85/49/fopen): adding to final database dump
+0012.465 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_wpfm_backup.table.gz (86/49/fopen): adding to final database dump
+0012.475 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_wpwhpro_authentication.table.tmpr0.gz (87/49/fopen): adding to final database dump
+0012.486 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_wpwhpro_authentication.table.gz (88/49/fopen): adding to final database dump
+0012.497 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_indexable.table.tmpr36153.gz (89/49/fopen): adding to final database dump
+0012.513 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_indexable.table.gz (90/49/fopen): adding to final database dump
+0012.520 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_indexable_hierarchy.table.tmpr2001.gz (91/49/fopen): adding to final database dump
+0012.531 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_indexable_hierarchy.table.gz (92/49/fopen): adding to final database dump
+0012.542 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_migrations.table.tmpr19.gz (93/49/fopen): adding to final database dump
+0012.551 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_migrations.table.gz (94/49/fopen): adding to final database dump
+0012.559 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_primary_term.table.tmpr2181.gz (95/49/fopen): adding to final database dump
+0012.570 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_primary_term.table.gz (96/49/fopen): adding to final database dump
+0012.579 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_seo_links.table.tmpr369846.gz (97/49/fopen): adding to final database dump
+0012.591 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db-table-wp_yoast_seo_links.table.gz (98/49/fopen): adding to final database dump
+0012.617 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz: finished writing out complete database file (11946.2 KB)
+0012.788 (0) Total database tables backed up: 49 (backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz, size: 12233043, sha1: 55afde8be97ec2b4ab238081ac5ca88191907752, sha256: c97869a14e2e0ce5027ba0f2a33951ba5a6242ac7c134e618fdcf7f41b1b50c0)
+0012.822 (0) PHP event: code E_DEPRECATED: strlen(): Passing null to parameter #1 ($string) of type string is deprecated (line 2802, wp-content/plugins/updraftplus/backup.php)
+0012.848 (0) backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz: db: This file has not yet been successfully uploaded: will queue
+0012.859 (0) Saving backup history. Total backup size: 11.7 MB
+0012.882 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0012.912 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0012.920 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-ba93fd6d25668f7e54a9cb8e49e5fc61)
+0013.362 (0) Amazon S3: Set region (UpdraftPlus_S3): eu-north-1
+0013.382 (0) Amazon S3: Set endpoint: s3.eu-north-1.amazonaws.com
+0013.395 (0) Amazon S3: upload (eu-north-1): backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz (chunks: 3) -> s3://vshn-wp-backup/backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz
+0013.759 (0) Amazon S3: chunked upload: got multipart ID: qE2VChg.H8g__W.UnPb3lD4DC6TyTZ0e1nfdyMn3oy6Kj1o6i3tyi2o.KJBz4JORhOfW.pDR2oT3ibjkzMxCT6_0GxjHRn0gp1G80HmJDeFqSGUxvJsTamdH0JrMwIy3
+0016.249 (0) S3 chunked upload: 33.3 % uploaded (1, d19aebf299b886f6199340801333bd82)
+0018.862 (0) S3 chunked upload: 66.7 % uploaded (2, 4cc99d36aad59313b9f68017e4b83c29)
+0020.503 (0) S3 chunked upload: 100 % uploaded (3, 1e4d473413cab0ae7585b6fc69968463)
+0020.536 (0) Amazon S3: upload: all chunks uploaded; will now instruct S3 to re-assemble
+0020.964 (0) Amazon S3: upload (db0): re-assembly succeeded
+0020.978 (0) Recording as successfully uploaded: backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz
+0021.010 (0) Deleting local file: backup_2023-09-29-0828_VSHN_AG_0e6506e743c3-db.gz: OK
+0021.050 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=3, retain_db=3
+0021.064 (0) Number of backup sets in history: 7; groups (db): 1
+0021.079 (0) Examining (for databases) backup set with group_id=0, nonce=0e6506e743c3, datestamp=1695968930 (Sep 29 2023 06:28:50)
+0021.089 (0) This backup set is the backup set just made, so will not be deleted.
+0021.089 (0) Examining (for databases) backup set with group_id=0, nonce=42dd57ad7319, datestamp=1693977604 (Sep 06 2023 05:20:04)
+0021.089 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.098 (0) Examining (for databases) backup set with group_id=0, nonce=e229d0e5d6f1, datestamp=1693891203 (Sep 05 2023 05:20:03)
+0021.098 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.098 (0) Examining (for databases) backup set with group_id=0, nonce=e489cacac67b, datestamp=1693804804 (Sep 04 2023 05:20:04)
+0021.098 (0) 1693804804: db: this set includes a database (backup_2023-09-04-0720_VSHN_AG_e489cacac67b-db.gz); db count is now 3
+0021.098 (0) 1693804804: db: over retain limit (3); will delete this database
+0021.098 (0) Delete file: backup_2023-09-04-0720_VSHN_AG_e489cacac67b-db.gz, service=s3
+0021.111 (0) Amazon S3: Delete remote: bucket=vshn-wp-backup, URI=backup_2023-09-04-0720_VSHN_AG_e489cacac67b-db.gz
+0021.446 (0) This backup set is now empty; will remove from history
+0021.461 (0) Corresponding log file (log.e489cacac67b.txt) not found - must have already been deleted
+0021.476 (0) Examining (for databases) backup set with group_id=0, nonce=7cd4882694be, datestamp=1693545602 (Sep 01 2023 05:20:02)
+0021.476 (0) Examining (for databases) backup set with group_id=0, nonce=ead11ae7d830, datestamp=1692940806 (Aug 25 2023 05:20:06)
+0021.476 (0) Examining (for databases) backup set with group_id=0, nonce=bc0ebe432436, datestamp=1692336006 (Aug 18 2023 05:20:06)
+0021.476 (0) Number of backup sets in history: 6; groups (files): 1
+0021.486 (0) Examining (for files) backup set with nonce=0e6506e743c3, datestamp=1695968930 (Sep 29 2023 06:28:50)
+0021.486 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.499 (0) Examining (for files) backup set with nonce=42dd57ad7319, datestamp=1693977604 (Sep 06 2023 05:20:04)
+0021.499 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.499 (0) Examining (for files) backup set with nonce=e229d0e5d6f1, datestamp=1693891203 (Sep 05 2023 05:20:03)
+0021.499 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.499 (0) Examining (for files) backup set with nonce=7cd4882694be, datestamp=1693545602 (Sep 01 2023 05:20:02)
+0021.499 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0021.508 (0) Examining (for files) backup set with nonce=ead11ae7d830, datestamp=1692940806 (Aug 25 2023 05:20:06)
+0021.508 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0021.508 (0) Examining (for files) backup set with nonce=bc0ebe432436, datestamp=1692336006 (Aug 18 2023 05:20:06)
+0021.508 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0021.508 (0) Retain: saving new backup history (sets now: 6) and finishing retain operation
+0021.544 (0) Resume backup (0e6506e743c3, 0): finish run
+0021.573 (0) Decremented the semaphore (d) by 1
+0021.587 (0) Semaphore (d) unlocked
+0021.602 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0021.635 (0) The backup apparently succeeded and is now complete
+0021.646 (0) No email will/can be sent - the user has not configured an email address.
+0021.656 (0) Die Sicherung war anscheinend erfolgreich und ist nun vollständig

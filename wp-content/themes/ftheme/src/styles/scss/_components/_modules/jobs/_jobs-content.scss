@@ -1,0 +1,233 @@
+.jobs-content {
+    &.wrapper {
+        padding-bottom: 180px;
+        border-bottom: 2px solid $color-additional-1;
+
+        @include section-paddings;
+
+        @include lg-down {
+            padding-bottom: 150px;
+        }
+
+        @include md-down {
+            padding-bottom: 120px;
+        }
+    }
+
+    .inner {
+        max-width: 850px;
+
+        @include lg-down {
+            max-width: 770px;
+        }
+
+        @include md-down {
+            max-width: 700px;
+        }
+    }
+
+    .content {
+        @include content;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    #recruitee-careers.recruitee {
+        margin-bottom: 30px;
+
+        .rt-theme-light.rt-body {
+            box-shadow: none;
+            border: none;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .rt-list .rt-list__header-main .rt__text {
+            color: $color-accent-primary;
+            font-weight: 600;
+        }
+
+        .rt-list__offer-title {
+            @include sm-down {
+                font-size: 18px;
+                line-height: $line-height-md;
+            }
+        }
+
+        .rt-list__offer-item .rt-icon-arrow-forward {
+            opacity: 1;
+            transform: translateX(0);
+            color: $color-primary;
+            font-size: $font-size-lg;
+            right: 0;
+
+            @include md-down {
+                font-size: $font-size-md;
+            }
+
+            @include sm-down {
+                opacity: 0;
+            }
+        }
+    }
+
+    #recruitee-careers-details-container {
+        .rt-theme-light.rt-details__outer--popup.rt-details__outer .rt-details__backdrop {
+            background: none !important;
+            background-color: rgba(22, 25, 40, 0.6) !important;
+        }
+
+        .rt-details__inner {
+            &.rt__text {
+                font-family: $font-family-primary;
+            }
+
+            .rt-theme-light .rt-details__footer {
+                background-color: $color-additional-1;
+                border-top: 1px solid $color-additional-2;
+            }
+        }
+
+        .rt-details__header {
+            .rt-details__header-title {
+                font-weight: 600;
+
+                @include md-down {
+                    font-size: $font-size-lg;
+                }
+            }
+        }
+
+        .rt-details__content {
+            .rt__text--dark.rt__text-header {
+                color: $color-accent-primary;
+            }
+
+            .rt__text--base {
+                color: $color-primary;
+            }
+        }
+
+        .rt-details__heading {
+            &.rt__text--dark {
+                background-color: $color-additional-1;
+                border-top: 1px solid $color-additional-2;
+                border-bottom: 1px solid $color-additional-2;
+            }
+
+            .rt-details__separator {
+                color: $color-secondary;
+            }
+        }
+
+        .rt-details__content--main.rt__text--base,
+        .rt-details__content--requirements.rt__text--base {
+            @include with-link-primary;
+        }
+
+        .rt-theme-light .rt-details__content--form {
+            .rt-form__group {
+
+                input[type=text],
+                input[type=email],
+                input[type=tel],
+                textarea {
+                    background-color: $color-tertiary;
+                    border: 1px solid $color-additional-2;
+                    box-shadow: 0px 0px 5px rgba(0, 13, 26, 0.05);
+                    border-radius: 4px;
+                    transition: border 0.2s;
+
+                    &:focus {
+                        border: 1px solid $color-accent-primary;
+                    }
+                }
+            }
+        }
+
+        .rt__button.rt__button--action {
+            background-color: $color-accent-primary;
+            transition: background-color 0.2s;
+
+            @include xs-down {
+                line-height: $line-height-lg;
+            }
+
+            &:hover {
+                box-shadow: none !important;
+                background-color: lighten($color-accent-primary, 5.5%);
+            }
+        }
+    }
+}
+
+
+.rating-card {
+    .inner {
+        font-size: 18px;
+    }
+
+    .title {
+        margin-top: 60px;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    .rating-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        column-gap: $column-gap;
+        margin-top: 30px;
+
+        @include sm-down {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+        }
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        text-align: center;
+        background-color: $color-additional-1;
+        border-radius: 8px;
+    }
+
+    .description {
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        @include with-link-primary;
+    }
+
+    .text {
+        @include with-link-primary;
+
+        p {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        max-width: 240px;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+}

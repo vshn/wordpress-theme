@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: 500;
+  line-height: $line-height-base;
+  color: $color-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: relative;
+  flex-grow: 1;
+  max-width: $container-width;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include lg-down {
+    max-width: $container-width-lg;
+  }
+
+  @include md-down {
+    max-width: $container-width-md;
+  }
+
+  @include sm-down {
+    max-width: 100%;
+  }
+}
+
+#hubspot-messages-iframe-container {
+  z-index: 10 !important;
+}

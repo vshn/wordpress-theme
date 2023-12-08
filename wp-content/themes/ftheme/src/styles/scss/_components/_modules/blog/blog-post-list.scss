@@ -1,0 +1,239 @@
+.blog-post-list {
+    &.wrapper {
+        position: relative;
+        margin-bottom: 30px;
+
+        @include section-paddings;
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1290px;
+            position: relative;
+        }
+    }
+
+    .items-wrapper {
+        max-width: 770px;
+
+        &.has-banner {
+            min-height: 630px; // make sure banner is visible even if no/too few posts
+        }
+
+        @include lg-down {
+            max-width: 610px;
+        }
+
+        @include md-down {
+            max-width: initial;
+        }
+    }
+
+    .illustration {
+        position: absolute;
+        top: 0;
+        right: 45px;
+        width: 320px;
+
+        @include lg-down {
+            top: 30px;
+            right: 30px;
+            width: 230px;
+        }
+
+        @include md-down {
+            display: none;
+        }
+    }
+
+    .banner {
+        position: relative;
+        display: block;
+        text-decoration: none;
+
+        &-title {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 900;
+            margin-bottom: 0;
+            margin-top: 0;
+
+            @include lg-down {
+                font-size: 18px;
+            }
+        }
+
+        &-image,
+        &-overlay {
+            border-radius: 8px;
+        }
+
+        &-overlay {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(8, 17, 43, 0) 0%, #08112b 100%);
+            opacity: 0.75;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        right: 0;
+        bottom: 50%;
+        z-index: -1;
+        transform: translateY(50%);
+
+        @include xl-up {
+            width: #{$container-side-gap};
+            min-width: 430px;
+            max-height: 700px;
+        }
+
+        @include lg-down {
+            width: 220px;
+        }
+
+        @include md-down {
+            display: none;
+        }
+    }
+
+    &-item {
+        &.wrapper {
+            display: flex;
+            padding-bottom: 60px;
+            margin-bottom: 60px;
+            color: $color-secondary;
+            border-bottom: 2px solid $color-additional-1;
+
+            @include lg-down {
+                flex-direction: column;
+                padding-bottom: 45px;
+                margin-bottom: 45px;
+            }
+
+            @include md-down {
+                padding-bottom: 40px;
+                margin-bottom: 45px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .date {
+            flex-shrink: 0;
+            align-self: flex-start;
+            width: 70px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            margin-right: 40px;
+            color: $color-primary;
+            text-align: center;
+            background-color: $color-additional-1;
+            border-radius: 5px;
+            border-bottom-right-radius: 30px;
+
+            @include lg-down {
+                display: flex;
+                align-items: baseline;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: 30px;
+                background-color: $color-tertiary;
+            }
+        }
+
+        .day {
+            display: block;
+            font-size: $font-size-lg;
+            font-weight: 900;
+            line-height: $line-height-lg;
+
+            @include lg-down {
+                margin-right: 5px;
+                font-size: 24px;
+            }
+        }
+
+        .month {
+            font-weight: 700;
+
+            @include lg-down {
+                font-size: 14px;
+            }
+        }
+
+        .title {
+            display: -webkit-box;
+            margin-bottom: 15px;
+            overflow: hidden;
+            font-size: 36px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            @include with-link-secondary;
+
+            @include lg-down {
+                margin-bottom: 30px;
+                font-size: 32px;
+            }
+
+            @include md-down {
+                font-size: 30px;
+            }
+        }
+
+        .short-description {
+            display: -webkit-box;
+            margin-top: 0;
+            margin-bottom: 30px;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+
+            p {
+                margin-top: 0;
+            }
+
+            @include md-down {
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+
+    .gatsby-image {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+
+        img {
+            max-width: 100%;
+            display: block;
+            position: static;
+            bottom: 0;
+            height: 100%;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            right: 0;
+            top: 0;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+}

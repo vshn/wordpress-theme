@@ -1,0 +1,116 @@
+.technology-partners-list {
+    &.wrapper {
+        margin-bottom: 180px;
+
+        @include section-paddings;
+
+        @include lg-down {
+            margin-bottom: 150px;
+        }
+
+        @include md-down {
+            margin-bottom: 120px;
+        }
+    }
+
+    &__items-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        row-gap: 30px;
+        column-gap: $column-gap;
+        padding-left: 0;
+        list-style-type: none;
+
+        @include lg-down {
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        }
+
+        @include md-down {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            row-gap: 20px;
+            column-gap: $column-gap-md;
+        }
+
+        @include sm-down {
+            grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+            row-gap: 15px;
+        }
+    }
+
+    &__item {
+        padding: 30px;
+        text-align: center;
+        background-image:
+            linear-gradient(
+            234.34deg,
+            #f8fafc 0%,
+            $color-tertiary 100%
+            );
+        border-radius: 8px;
+        box-shadow: 0 10px 20px 10px rgba($color-primary, 0.05);
+
+        @include with-link-secondary;
+
+        @include hover {
+            background-image:
+            linear-gradient(0deg, $color-tertiary, $color-tertiary),
+            linear-gradient(234.34deg, #f8fafc, $color-tertiary);
+        }
+
+        @include md-down {
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        @include sm-down {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 135px;
+    }
+
+    .logo {
+        display: block;
+        height: auto;
+        overflow: hidden;
+        object-fit: contain;
+
+        img {
+            display: block;
+            height: auto;
+            object-fit: contain;
+            overflow: hidden;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__name {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: $font-size-md;
+        font-weight: 700;
+        line-height: $line-height-md;
+
+        @include md-down {
+            font-size: 18px;
+        }
+    }
+}

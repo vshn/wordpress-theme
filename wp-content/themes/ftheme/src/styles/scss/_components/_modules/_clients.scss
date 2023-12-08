@@ -1,0 +1,117 @@
+.partners-list {
+    @include section-paddings;
+
+    .filters-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+
+        @include md-down {
+            margin-bottom: 45px;
+        }
+
+        @include sm-down {
+            margin-bottom: 35px;
+        }
+    }
+
+    .partners-wrapper {
+        display: grid;
+        grid-template-areas:
+            ". . . ."
+            ". a a .";
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 45px;
+        column-gap: $column-gap;
+        justify-items: start;
+        min-height: 120px;
+        padding-left: 0;
+        list-style-type: none;
+        margin-bottom: 180px;
+
+        @include lg-down {
+            grid-template-areas:
+            ". . ."
+            "a a a";
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 35px;
+            margin-bottom: 150px;
+        }
+
+        @include md-down {
+            row-gap: 30px;
+            column-gap: $column-gap-md;
+            margin-bottom: 120px;
+        }
+
+        @include sm-down {
+            grid-template-areas:
+            ". ."
+            "a a";
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 28px;
+        }
+    }
+
+    .partner {
+        position: relative;
+        font-size: $font-size-md;
+        font-weight: 700;
+        line-height: $line-height-md;
+        list-style-type: none;
+
+        @include with-link-secondary;
+
+        @include lg-down {
+            font-size: 18px;
+        }
+
+        @include md-down {
+            font-size: 16px;
+        }
+
+        &.hide-client-member-industry, &.hide-client-member-infrastructure, &.hide-client-member-technology {
+            display: none;
+        }
+    }
+
+    .partner-link {
+        display: block;
+        padding-bottom: 5px;
+        border-bottom: 2px solid $color-additional-2;
+      
+    }
+
+    .no-matches {
+        grid-column: 2/ span 2;
+        align-self: flex-end;
+        justify-self: center;
+        margin: 0;
+        font-size: 44px;
+        line-height: 1.4;
+        color: $color-quaternary;
+
+        @include lg-down {
+            grid-column: 1/ span 3;
+            font-size: 40px;
+        }
+
+        @include md-down {
+            grid-column: 1/ span 2;
+            font-size: 36px;
+        }
+
+        @include sm-down {
+            grid-column: 1/ -1;
+            font-size: 32px;
+        }
+
+        @include xs-down {
+            font-size: 26px;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

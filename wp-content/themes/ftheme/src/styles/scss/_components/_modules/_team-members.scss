@@ -1,0 +1,488 @@
+.team-members {
+
+    &.wrapper {
+        margin-bottom: 180px;
+
+        @include section-paddings;
+
+        @include lg-down {
+            margin-bottom: 150px;
+        }
+
+        @include md-down {
+            margin-bottom: 120px;
+        }
+    }
+
+    .filters-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+
+        @include md-down {
+            margin-bottom: 45px;
+        }
+
+        @include sm-down {
+            margin-bottom: 35px;
+        }
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 45px;
+        column-gap: $column-gap;
+
+        @include lg-down {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include md-down {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 30px;
+            column-gap: $column-gap-md;
+        }
+
+        @include sm-down {
+            grid-template-columns: repeat(auto-fill, 300px);
+            justify-content: center;
+        }
+    }
+
+    .no-matches {
+        grid-column: 2/ span 2;
+        align-self: flex-end;
+        justify-self: center;
+        margin: 0;
+        font-size: 44px;
+        line-height: 1.4;
+        color: $color-quaternary;
+
+        @include lg-down {
+            grid-column: 1/ span 3;
+            font-size: 40px;
+        }
+
+        @include md-down {
+            grid-column: 1/ span 2;
+            font-size: 36px;
+        }
+
+        @include sm-down {
+            grid-column: 1/ -1;
+            font-size: 32px;
+        }
+
+        @include xs-down {
+            font-size: 26px;
+        }
+
+        &.hidden {
+            display: none;
+        }
+    }
+
+    .icon {
+        position: relative;
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+        border: 2px solid $color-quaternary;
+        border-radius: 50%;
+
+        @include md-down {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 0;
+        }
+
+        &::before {
+            position: absolute;
+            bottom: -7px;
+            left: -15px;
+            width: 23px;
+            height: 2px;
+            content: "";
+            background-color: $color-quaternary;
+            transform: rotate(135deg);
+
+            @include md-down {
+                bottom: -5px;
+                width: 20px;
+            }
+        }
+    }
+
+
+    .item-wrapper {
+        background: linear-gradient(234.34deg, #f8fafc 0%, $color-tertiary 100%);
+        border-radius: 8px;
+        box-shadow: 0 10px 20px 10px rgba($color-primary, 0.05);
+
+        &.hide-team-member-team, &.hide-team-member-role {
+            display: none;
+        }
+    }
+
+    .image-wrapper {
+        position: relative;
+        height: 200px;
+        background-color: $color-additional-1;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .no-avatar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .details {
+        min-height: 125px;
+        margin-bottom: 30px;
+    }
+
+    .job-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: $font-size-xs;
+        font-weight: 700;
+        line-height: $line-height-xs;
+        color: $color-quaternary;
+        text-transform: uppercase;
+    }
+
+    .name {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        display: flex;
+        padding-left: 0;
+        margin-top: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        @include lg-down {
+            grid-column: span 6;
+        }
+
+        @include sm-down {
+            margin-bottom: 25px;
+        }
+    }
+
+    .social-link-wrapper {
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        background: $color-quaternary;
+        border-radius: 100px;
+        transition: background-color $transition-base;
+
+        @include md-down {
+            width: 24px;
+            height: 24px;
+        }
+
+        @include hover {
+            background-color: $color-secondary;
+        }
+
+        &_email {
+            svg {
+                width: 16px;
+
+                @include md-down {
+                    width: 14px;
+                }
+            }
+        }
+
+        &_key {
+            svg {
+                width: 12px;
+
+                @include md-down {
+                    width: 10px;
+                }
+            }
+        }
+
+        &_sshKey {
+            svg {
+                width: 14px;
+
+                @include md-down {
+                    width: 12px;
+                }
+            }
+        }
+
+        &_twitter {
+            svg {
+                width: 14px;
+
+                @include md-down {
+                    width: 12px;
+                }
+            }
+        }
+
+        &_linkedin {
+            svg {
+                width: 13px;
+                margin-bottom: 2px;
+
+                @include md-down {
+                    width: 11px;
+                }
+            }
+        }
+
+        &_xing {
+            svg {
+                width: 15px;
+
+                @include md-down {
+                    width: 13px;
+                }
+            }
+        }
+
+        &_github {
+            svg {
+                width: 19px;
+
+                @include md-down {
+                    width: 17px;
+                }
+            }
+        }
+
+        &_personal {
+            svg {
+                width: 16px;
+
+                @include md-down {
+                    width: 14px;
+                }
+            }
+        }
+
+        svg {
+            fill: $color-tertiary;
+        }
+    }
+
+    .item-wrapper {
+        background: linear-gradient(234.34deg, #f8fafc 0%, $color-tertiary 100%);
+        border-radius: 8px;
+        box-shadow: 0 10px 20px 10px rgba($color-primary, 0.05);
+    }
+
+    .image-wrapper {
+        position: relative;
+        height: 200px;
+        background-color: $color-additional-1;
+    }
+
+    .image {
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .no-avatar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .details {
+        min-height: 125px;
+        margin-bottom: 30px;
+    }
+
+    .job-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: $font-size-xs;
+        font-weight: 700;
+        line-height: $line-height-xs;
+        color: $color-quaternary;
+        text-transform: uppercase;
+    }
+
+    .name {
+        margin-bottom: 10px;
+    }
+
+    .social-links {
+        display: flex;
+        padding-left: 0;
+        margin-top: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style-type: none;
+
+        @include lg-down {
+            grid-column: span 6;
+        }
+
+        @include sm-down {
+            margin-bottom: 25px;
+        }
+    }
+
+    .social-link-wrapper {
+        margin-right: 8px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 26px;
+        height: 26px;
+        background: $color-quaternary;
+        border-radius: 100px;
+        transition: background-color $transition-base;
+
+        @include md-down {
+            width: 24px;
+            height: 24px;
+        }
+
+        @include hover {
+            background-color: $color-secondary;
+        }
+
+        &_email {
+            svg {
+                width: 16px;
+
+                @include md-down {
+                    width: 14px;
+                }
+            }
+        }
+
+        &_key {
+            svg {
+                width: 12px;
+
+                @include md-down {
+                    width: 10px;
+                }
+            }
+        }
+
+        &_sshKey {
+            svg {
+                width: 14px;
+
+                @include md-down {
+                    width: 12px;
+                }
+            }
+        }
+
+        &_twitter {
+            svg {
+                width: 14px;
+
+                @include md-down {
+                    width: 12px;
+                }
+            }
+        }
+
+        &_linkedin {
+            svg {
+                width: 13px;
+                margin-bottom: 2px;
+
+                @include md-down {
+                    width: 11px;
+                }
+            }
+        }
+
+        &_xing {
+            svg {
+                width: 15px;
+
+                @include md-down {
+                    width: 13px;
+                }
+            }
+        }
+
+        &_github {
+            svg {
+                width: 19px;
+
+                @include md-down {
+                    width: 17px;
+                }
+            }
+        }
+
+        &_personal {
+            svg {
+                width: 16px;
+
+                @include md-down {
+                    width: 14px;
+                }
+            }
+        }
+
+        svg {
+            fill: $color-tertiary;
+        }
+    }
+
+
+
+}

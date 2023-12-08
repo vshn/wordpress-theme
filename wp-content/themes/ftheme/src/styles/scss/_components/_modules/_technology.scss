@@ -1,0 +1,373 @@
+.technology {
+  &.wrapper {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin-bottom: 125px;
+
+    @include section-paddings;
+
+    @include lg-down {
+      padding-top: 30px;
+      padding-bottom: 50px;
+      margin-bottom: 90px;
+    }
+
+    @include md-down {
+      padding-top: 25px;
+      padding-bottom: 0;
+      margin-bottom: 100px;
+    }
+
+    @include sm-down {
+      padding-top: 0;
+      margin-bottom: 145px;
+      text-align: center;
+    }
+  }
+
+  .inner {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: $column-gap;
+
+    @include sm-down {
+      display: block;
+    }
+  }
+
+  .content {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    padding-top: 160px;
+
+    @include lg-down {
+      grid-column-end: 7;
+      padding-top: 80px;
+    }
+
+    @include md-down {
+      grid-column-end: 6;
+      padding-top: 50px;
+    }
+
+    @include sm-down {
+      margin-bottom: 80px;
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .description {
+    max-width: 478px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: $font-size-md;
+    font-weight: 500;
+    line-height: $line-height-md;
+    color: $color-secondary;
+
+    @include lg-down {
+      max-width: initial;
+    }
+
+    @include md-down {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  .items-wrapper {
+    position: relative;
+    grid-column-start: 7;
+    grid-column-end: 12;
+
+    @include lg-down {
+      grid-column-start: 8;
+      grid-column-end: 13;
+    }
+
+    @include md-down {
+      grid-column-start: 7;
+      padding-top: 20px;
+      margin-left: -5px;
+    }
+
+    @include sm-down {
+      max-width: 340px;
+      padding-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .items-inner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    @include lg-down {
+      column-gap: 15px;
+    }
+
+    @include md-down {
+      column-gap: 10px;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    margin-left: 30px;
+    transform: translate(-50%, -50%);
+
+    @include lg-down {
+      width: 582px;
+    }
+
+    @include md-down {
+      top: -15px;
+      width: 534px;
+      margin-left: 20px;
+      transform: translateX(-50%);
+    }
+
+    @include sm-down {
+      top: -70px;
+    }
+  }
+
+}
+
+.technology-item {
+
+  &.wrapper {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 15px 30px rgba($color-primary, 0.15);
+
+    @include lg-down {
+      height: 320px;
+    }
+
+    @include md-down {
+      height: 295px;
+    }
+
+    &:nth-of-type(1) {
+      margin-top: 70px;
+      border-top-left-radius: 30px;
+
+      @include lg-down {
+        margin-top: 50px;
+        border-top-left-radius: 20px;
+      }
+
+      .logo-wrapper::before {
+        border-top-right-radius: 20px;
+      }
+    }
+
+    &:nth-of-type(2) {
+      border-top-right-radius: 30px;
+
+      .logo-wrapper::before {
+        border-top-left-radius: 20px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 70px;
+      border-top-right-radius: 30px;
+
+      @include lg-down {
+        margin-top: 50px;
+        border-top-right-radius: 25px;
+      }
+
+      .logo-wrapper::before {
+        border-top-left-radius: 20px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      margin-top: 140px;
+      border-top-left-radius: 30px;
+
+      @include lg-down {
+        margin-top: 100px;
+        border-top-left-radius: 20px;
+      }
+
+      @include md-down {
+        margin-top: 95px;
+      }
+
+      .logo-wrapper::before {
+        border-top-right-radius: 20px;
+      }
+    }
+
+    &:nth-of-type(5) {
+      margin-top: 70px;
+      border-top-left-radius: 30px;
+
+      @include lg-down {
+        margin-top: 50px;
+        border-top-left-radius: 20px;
+      }
+
+      .logo-wrapper::before {
+        border-top-right-radius: 20px;
+      }
+    }
+
+    &:nth-of-type(6) {
+      border-top-right-radius: 30px;
+
+      .logo-wrapper::before {
+        border-top-left-radius: 20px;
+      }
+    }
+
+    &.rancher {
+      background-color: #08c;
+
+      .logo-wrapper {
+        &::before {
+          background-color: $color-primary;
+        }
+      }
+
+      .logo {
+        @include lg-down {
+          width: 30px;
+        }
+      }
+    }
+
+    &.kubernetes {
+      background-color: #0054ff;
+
+      .logo-wrapper {
+        &::before {
+          background-color: $color-primary;
+        }
+      }
+
+      .logo {
+        @include lg-down {
+          width: 30px;
+        }
+      }
+    }
+
+    &.ansible {
+      background-color: $color-primary;
+
+      .logo-wrapper {
+        &::before {
+          background-color: $color-tertiary;
+        }
+      }
+
+      .logo {
+        @include lg-down {
+          width: 21px;
+        }
+      }
+    }
+
+    &.openshift {
+      background-color: #df2030;
+
+      .logo {
+        @include lg-down {
+          width: 28px;
+        }
+      }
+    }
+
+    &.docker {
+      background-color: $color-accent-primary;
+
+      .logo {
+        @include lg-down {
+          width: 32px;
+        }
+      }
+    }
+
+    &.puppet {
+      background-color: #ffbf00;
+
+      .name {
+        color: $color-primary;
+      }
+
+      .logo-wrapper {
+        &::before {
+          background-color: $color-tertiary;
+          opacity: 0.25;
+        }
+      }
+
+      .logo {
+        @include lg-down {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: $font-size-md;
+    font-weight: 700;
+    line-height: $line-height-md;
+    color: $color-tertiary;
+    transform: translate(-50%, -50%) rotate(-90deg);
+
+    @include lg-down {
+      font-size: 14px;
+    }
+  }
+
+  .logo-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 100%;
+
+    &::before {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-color: $color-primary;
+      opacity: 0.1;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
