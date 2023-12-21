@@ -25,7 +25,7 @@ class Top_Menu_Walker_Nav_Menu extends Walker_Nav_Menu {
       $output .= "</ul>\n";
   }
 
-  function start_el(&$output, $item, $depth = 0, $args = null) {
+  function start_el(&$output, $item, $depth = 0, $args = null, $current_object_id = 0) {
       $indent = ($depth) ? str_repeat("\t", $depth) : '';
 
       $output .= $indent;
@@ -56,7 +56,7 @@ class Footer_Menu_Walker_Nav_Menu extends Walker_Nav_Menu {
       $output .= "</ul>\n";
   }
 
-  function start_el(&$output, $item, $depth = 0, $args = null) {
+  function start_el(&$output, $item, $depth = 0, $args = null, $current_object_id = 0) {
       $indent = ($depth) ? str_repeat("\t", $depth) : '';
 
       $output .= $indent;
@@ -134,7 +134,7 @@ class Footer_Menu_Walker_Nav_Menu extends Walker_Nav_Menu {
 //             // Output for third-level menu items (sub-sub-menu items)
 //             $output .= '<li class="sub-item">';
 //             $output .= '<a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a>';
-//         } 
+//         }
 //     }
 
 //     function end_el(&$output, $item, $depth=0, $args=null) {
@@ -207,7 +207,7 @@ class Main_Menu_Walker extends Walker_Nav_Menu {
             //$output .= '<li class="menu-item with-sub-menu">';
             $output .= '<li class="menu-item';
             if ($args->walker->has_children) {
-                $output .= ' with-sub-menu'; 
+                $output .= ' with-sub-menu';
             }
             $output .= '">';
             $output .= '<div class="link">';
@@ -228,7 +228,7 @@ class Main_Menu_Walker extends Walker_Nav_Menu {
                         $output .= '</a>';
                     }
                 }
-                $this->acf_data_displayed = true; 
+                $this->acf_data_displayed = true;
             }
 
             // Output for second-level menu items
@@ -242,7 +242,7 @@ class Main_Menu_Walker extends Walker_Nav_Menu {
             // Output for third-level menu items (sub-sub-menu items)
             $output .= '<li class="sub-item">';
             $output .= '<a href="' . esc_url($item->url) . '">' . esc_html($item->title) . '</a>';
-        } 
+        }
     }
 
     function end_el(&$output, $item, $depth=0, $args=null) {
