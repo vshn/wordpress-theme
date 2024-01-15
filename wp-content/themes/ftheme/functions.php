@@ -72,7 +72,8 @@ function filter_posts() {
     $args = array(
         'posts_per_page' => 20,
         'post_type' => 'post',
-        'paged' => $page
+        'paged' => $page,
+        'post_status' => 'publish'
     );
 
     if ($category !== 'all') {
@@ -86,7 +87,7 @@ function filter_posts() {
     if ($posts_query->have_posts()) :
         ob_start();
         while ($posts_query->have_posts()) : $posts_query->the_post();
-            
+
             include('template-parts/blog/blog-post-list-single.php');
 
         endwhile;
@@ -113,7 +114,7 @@ add_action( 'wp_ajax_nopriv_ajax_pagination', 'my_ajax_pagination' );
 add_action( 'wp_ajax_ajax_pagination', 'my_ajax_pagination' );
 
 function my_ajax_pagination() {
-    
+
     $page = isset($_POST['page']) ? $_POST['page'] : 1;
     $category = isset($_POST['category']) ? $_POST['category'] : 'all';
 
@@ -134,7 +135,7 @@ function my_ajax_pagination() {
     if ($posts_query->have_posts()) :
         ob_start();
         while ($posts_query->have_posts()) : $posts_query->the_post();
-            
+
             include('template-parts/blog/blog-post-list-single.php');
 
         endwhile;
